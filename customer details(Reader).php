@@ -15,11 +15,12 @@
         </div><br>
         <div class="form group">
             <label>Date :</label>
-            <dd><input type ="date" name="date" id="date" class="form control"></dd>
+            <dd><input type ="date" name="date" id="date" class="form control"></dd>    
         </div><br>
         <div class="form group">
             <label>Meter Reading Value :</label>
             <dd><input type ="number" name="mrv" id="mrv" class="form control"></dd>
         </div>
+    </form>
 
     </html>
