@@ -9,6 +9,7 @@
 <h2>Customer details</h2>
 
     <form action="" method ="post">
+        <fieldset>
         <div class="form group">
             <label>Customer Account Number :</label>
             <dd><input type ="number" name="customeraccountnumber" id="customeraccountnumber" class="form control"></dd>
@@ -21,6 +22,7 @@
             <label>Meter Reading Value :</label>
             <dd><input type ="number" name="mrv" id="mrv" class="form control"></dd>
         </div>
-    </form>
+        </fieldset>
+    </form> 
 
     </html>
