@@ -1,5 +1,5 @@
 <?php
-
+$connection = mysqli_connect("localhost","root","","CEBCUSTOMERDATABASE");
 
 ?>
 
@@ -16,6 +16,7 @@
             
         </div><br></fieldset>
 </form>
-          
+
+
 
     </html>

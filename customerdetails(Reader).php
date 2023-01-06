@@ -6,17 +6,13 @@
 <html>
     
 
-<h2>Customer details</h2>
+<h2>Add Customer Details</h2>
 
     <form action="customerdetails(Reader).php" method ="post">
         <fieldset>
         <div class="form group">
             <label>Customer Account Number :</label>
             <dd><input type ="number" name="AccountNumber" id="AccountNumber" class="form control"></dd>
-        </div><br>
-        <div class="form group">
-            <label>Customer Name :</label>
-            <dd><input type ="text" name="Name" id="Name" class="form control"></dd>
         </div><br>
         <div class="form group">
             <label>Units :</label>
@@ -42,16 +38,15 @@
 $connection = mysqli_connect('localhost', 'root', '', 'CEBCUSTOMERDATABASE');
 
    $AccountNumber = $_POST['AccountNumber'];
-   $Name  = $_POST['Name'];
    $Units = $_POST['Units'];
    $LastReadingDate = $_POST['LastReadingDate'];
    $PreviousReadingDate = $_POST['PreviousReadingDate'];
   
 
-       $query = "INSERT INTO `CustomerDetails`(`AccountNumber`, `Name`, `Units`, `LastReadingDate`, `PreviousReadingDate`) VALUES ('$AccountNumber','$Name','$Units','$LastReadingDate','$PreviousReadingDate')";
+       $query = "INSERT INTO `CustomerDetails`(`AccountNumber`, `Units`, `LastReadingDate`, `PreviousReadingDate`) VALUES ('$AccountNumber','$Units','$LastReadingDate','$PreviousReadingDate')";
                $insert = mysqli_query($connection, $query);
    if ($insert){
-       echo "<b><i>Details Added...</i></b>";
+       echo "<b><i>Data Added...</i></b>";
    } else {
        echo "There is some problem...";
    }
