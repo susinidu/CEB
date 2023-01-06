@@ -13,7 +13,7 @@
         
     }else{ ?>
 
-<form name= "login" method="post" accept-charset='UTF-8' action="customer details(Reader).php" >
+<form name= "login" method="post" accept-charset='UTF-8' action="customerdetails(Reader).php" >
 <fieldset>
     <legend>Meter Reader Login</legend>
     <label for="username" >UserName: </label>
