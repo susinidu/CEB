@@ -11,7 +11,8 @@
     {
         
         
-    }else{ ?>
+    }
+    else{ ?>
 
 <form name= "login" method="post" accept-charset='UTF-8' action="customerdetails(Reader).php" >
 <fieldset>
@@ -23,6 +24,7 @@
     <input type="submit" name="Submit" value="Submit" />
  </fieldset>
 </form>
+
 
 <?php 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
